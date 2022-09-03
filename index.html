@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>BookMyShow</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+
+            <nav class="sidenavbar">
+                <h1>Hey!</h1>
+            </nav>
+
+            <nav class="sidesubnavbar">
+                <img src="img/rewards.webp">
+                <p>Unlock special offers & great benifits</p>
+                <button class="login" onclick="document.getElementById('id01').style.display='block'">Login / Register</button>
+            </nav>
+
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                </div>
+                <div class="text">Notifications</div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+                <div class="text">Purchase History<br>
+                    <div class="subtext">View all your bookings & Purchases</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="tv-outline"></ion-icon>
+                </div>
+                <div class="text">Stream Library<br>
+                    <div class="subtext">Rented & Purchased Movies</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </div>
+                <div class="text">Help & Support<br>
+                    <div class="subtext">View commonly asked queries and Chat</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </div>
+                <div class="text">Accounts & Settings<br>
+                    <div class="subtext">Location, Payments, Addresses & More</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="gift-outline"></ion-icon>
+                </div>
+                <div class="text">Rewards<br>
+                    <div class="subtext">View your rewards & unlock new ones</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </div>
+                <div class="text">BookASmile</div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+
+        </nav>
+        <!-- End sidebar -->
+
+        <!-- Dark overlay -->
+        <div class="overlay"></div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <nav class="navbar">
+                <img src="img/logo.png" class="brand-logo" alt="" />
+                <div class='input'>
+                    <ion-icon name="search"></ion-icon>
+                    <input className='search'
+                        placeholder='Search for Movies, Events, Plays, Sports, and Activities'></input>
+                </div>
+                <div class="right-container">
+                    <a href="#" class="location">Kollam<ion-icon name="caret-down-sharp"></ion-icon></a>
+                    <button class="signin"
+                        onclick="document.getElementById('id01').style.display='block'">Signin</button>
+
+                    <div id="id01" class="modal">
+
+                        <div class="modal-content">
+                            <div class="getstart">
+                                <h3>Get Started</h3>
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </span>
+                            </div>
+
+                            <div class="container">
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <img src="img/googlelogo.svg">
+                                    </div>
+                                    <div class="text">Continue with Google</div>
+                                </a>
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <ion-icon name="mail-outline" style="font-size: 22px;"></ion-icon>
+                                    </div>
+                                    <div class="text">Continue with Email</div>
+                                </a>
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <ion-icon name="logo-apple" style="font-size: 22px;"></ion-icon>
+                                    </div>
+                                    <div class="text">Continue with Apple</div>
+                                </a>
+                            </div>
+                            <h2>OR</h2>
+
+                            <div class="phone">
+                                <img alt="indian flag" src="img/indianflag.svg">
+                                <div class="code">+91</div>
+                                <input id="mobileNo" type="tel" pattern="[0-9]*"
+                                    placeholder="Continue with mobile number" class="mobileNo">
+                            </div>
+
+                            <p>I agree to the <u>Terms & Conditions</u>&<u>Privacy Policy</u></p>
+
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="btn-customized open-menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </a>
+                </div>
+            </nav>
+
+            <nav class="subnavbar">
+                <ul class='navitem'>
+                    <li><a href='#Movies'>Movies</a></li>
+                    <li><a href='#Movies'>Stream<span>NEW</span></a></li>
+                    <li><a href='#Movies'>Events</a></li>
+                    <li><a href='#Movies'>Plays</a></li>
+                    <li><a href='#Movies'>Sports</a></li>
+                    <li><a href='#Movies'>Activities</a></li>
+                    <li><a href='#Movies'>Buzz</a></li>
+                </ul>
+                <ul class='navitem1'>
+                    <li><a href='#Movies'>ListYourShow<span>NEW</span></a></li>
+                    <li><a href='#Movies'>Corporates</a></li>
+                    <li><a href='#Movies'>Offers</a></li>
+                    <li><a href='#Movies'>Gift Cards</a></li>
+                </ul>
+            </nav>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <!-- <div class="slider">
+                    <img src="img/banner/banner1.webp" alt="">
+                </div> -->
+                </div>
+            </div>
+
+            <script src="js/data.js"></script>
+            <script src="js/app.js"></script>
+
+            <h1 class="title">Recommended Movies</h1>
+            <div class="movies-list">
+                <div class="card-container">
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="img/poster/poster1.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="heart-sharp"></ion-icon>
+                                <p>93% &ThinSpace; 928 votes</p>
+                            </div>
+                        </div>
+                        <h3>Theerppu</h3>
+                        <p class="detail">Drama/Thriller</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="img/poster/poster2.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="heart-sharp"></ion-icon>
+                                <p>92% &ThinSpace; 16k votes</p>
+                            </div>
+                        </div>
+                        <h3>Thallumaala</h3>
+                        <p class="detail">Action/Comedey</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="img/poster/poster3.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="heart-sharp"></ion-icon>
+                                <p>94% &ThinSpace; 14k votes</p>
+                            </div>
+                        </div>
+                        <h3>Nna Thaan Case Kodu</h3>
+                        <p class="detail">Comedy/Drama</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="img/poster/poster4.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="heart-sharp"></ion-icon>
+                                <p>59% &ThinSpace; 74k votes</p>
+                            </div>
+                        </div>
+                        <h3>Liger</h3>
+                        <p class="detail">Action/Drama/Romantic</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="img/poster/poster5.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="heart-sharp"></ion-icon>
+                                <p>87% &ThinSpace; 34k votes</p>
+                            </div>
+                        </div>
+                        <h3>Thiruchitrambalam</h3>
+                        <p class="detail">Comedy/Drama/Musical</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="img/poster/poster6.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="heart-sharp"></ion-icon>
+                                <p>92% &ThinSpace; 120k votes</p>
+                            </div>
+                        </div>
+                        <h3>Sita Ramam</h3>
+                        <p class="detail">Action/Drama/Romantic</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="img/poster/poster7.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="thumbs-up-sharp" style="color: green;"></ion-icon>
+                                <p>3k likes</p>
+                            </div>
+                        </div>
+                        <h3>Kudukka 2025</h3>
+                        <p class="detail">Drama/Thriller</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="img/poster/poster8.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="heart-sharp"></ion-icon>
+                                <p>84% &ThinSpace; 226 votes</p>
+                            </div>
+                        </div>
+                        <h3>Peace</h3>
+                        <p class="detail">Comedy/Drama/Thriller</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="img/poster/poster9.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="thumbs-up-sharp" style="color: green;"></ion-icon>
+                                <p>111 likes</p>
+                            </div>
+                        </div>
+                        <h3>Beyond The 7 Seas</h3>
+                        <p class="detail">Drama/Fantasy/Thriller</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="strip">
+                <img src="img/strip.webp" style="height:105px;" alt="">
+            </div>
+
+            <h1 class="title-enter">The Best of Entertainment</h1>
+            <div class="enter-list">
+                <div class="enter-container">
+
+                    <div class="card">
+                        <img src="img/enter/enter1.webp" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/enter/enter2.webp" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/enter/enter3.webp" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/enter/enter4.webp" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/enter/enter5.webp" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/enter/enter6.webp" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/enter/enter7.webp" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/enter/enter8.webp" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/enter/enter9.webp" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/enter/enter10.webp" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/enter/enter11.webp" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="img/enter/enter12.webp" class="card-img" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- End content -->
+
+    </div>
+    <!-- End wrapper -->
+
+</body>
+
+</html>
