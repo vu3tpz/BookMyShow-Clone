@@ -1,4 +1,4 @@
-# BookMyShow Clone 🎟️
+# BookMyShow Clone 🎫
 
 It is an clone website of BookMyShow that developed just using HTML, CSS and JavaScript. BookMyShow is a webiste used to buy Movie tickets in online.
 
@@ -21,3 +21,8 @@ git clone https://github.com/vu3tpz/AgroSmart
 3. Open index.html file in any Browser.
 
 # Screen Layout 🎟️
+
+![Uploading Screenshot (41).png…]()
+![Uploading Screenshot (42).png…]()
+![Screenshot (43)](https://user-images.githubusercontent.com/101320198/192150619-ec0dea40-841a-4476-8b02-1124f54d4ea4.png)
+![Uploading Screenshot (44).png…]()
