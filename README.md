@@ -29,3 +29,6 @@ git clone https://github.com/vu3tpz/AgroSmart
 ![Screenshot (43)](https://user-images.githubusercontent.com/101320198/192150619-ec0dea40-841a-4476-8b02-1124f54d4ea4.png)
 
 ![Screenshot (44)](https://user-images.githubusercontent.com/101320198/192151026-542ff47d-f0b9-4189-b3b8-a206165c5565.png)
+
+
+#The End..⚔️
